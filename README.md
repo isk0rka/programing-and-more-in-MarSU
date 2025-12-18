@@ -1,5 +1,5 @@
-# Cpp-programing-in-MarSU
-my repository for lab
+# programing-&-more-in-MarSU
+репозиторий для лабораторных работ, отчётов и наработок
 
 # Кем созданно
 группа СИ - 16:
