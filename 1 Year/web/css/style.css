@@ -77,7 +77,7 @@ body {
   background-image: radial-gradient(circle, rgba(0, 0, 0, 0.13) 0.7px, transparent 0.7px);
   background-size: 15px 15px;
   color: var(--text-dark);
-  font-family: "Manrope", sans-serif;
+  font-family: "Roboto Condensed";
   line-height: 1.4;
 }
 
@@ -143,7 +143,7 @@ a {
 .nav-list {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 30px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -152,8 +152,8 @@ a {
 .nav-list a {
   text-decoration: none;
   color: var(--text-light);
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 24p;
+  font-weight: 400;
   transition: color 0.25s ease;
 }
 
@@ -395,15 +395,21 @@ body.auth-open {
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: clamp(39px, 5.8vw, 83px);
+  font-size: clamp(39px, 5.8vw, 82px);
   line-height: 0.85;
 }
 
+
 .hero-description {
-  max-width: 510px;
-  margin: 16px 0 0;
-  font-size: 13px;
-  color: #d7dce4;
+  width: 500px;
+  margin: 1px 0 0;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+
+  color: #FFFFFF;
 }
 
 .hero-cta {
@@ -417,7 +423,7 @@ body.auth-open {
 }
 
 .backed-by {
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -451,20 +457,36 @@ body.auth-open {
 .testimonial-section,
 .about-section,
 .cta-section {
-  background-color: transparent;
+  background-color: #FFFFFF;
   padding: 40px 0;
 }
 
-.insight-section h2,
-.manage-section h2,
-.save-section h2,
-.testimonial-section h2,
-.about-section h2 {
+.insight-section h2 {
+  width: 1274px;
+  left: 120px;
+
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: clamp(48px, 5.3vw, 74px);
+  font-size: clamp(48px, 5.3vw, 60px);
+  line-height: 0.92;
+  color: #111519;
+}
+
+.manage-section h2,
+.save-section h2,
+.testimonial-section h2,
+.about-section h2 {
+
+  width: 650px;
+  left: 120px;
+
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: clamp(48px, 5.3vw, 60px);
   line-height: 0.92;
   color: #111519;
 }
@@ -527,9 +549,9 @@ body.auth-open {
 
 .insight-card h3 {
   margin: 10px 0 8px;
-  font-size: 20px;
-  font-family: "Manrope", sans-serif;
-  font-weight: 700;
+  font-size: 40px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 600;
   line-height: 1.2;
   text-align: center;
   text-transform: none;
@@ -543,7 +565,8 @@ body.auth-open {
 .insight-card p {
   margin: 0;
   color: #4d5b6a;
-  font-size: 13px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .insight-card-accent p {
@@ -580,7 +603,7 @@ body.auth-open {
 }
 
 .ring-label {
-  font-size: 12px;
+  font-size: 18px;
   color: #5d6b78;
 }
 
@@ -621,13 +644,13 @@ body.auth-open {
 
 .feat-item h3 {
   margin: 12px 0 0;
-  font-size: 15px;
+  font-size: 18px;
   text-align: center;
 }
 
 .feat-item p {
   margin: 6px 0 0;
-  font-size: 12px;
+  font-size: 16px;
   color: #5e6872;
   text-align: center;
 }
@@ -650,7 +673,7 @@ body.auth-open {
 
 .col-text > p {
   margin-top: 14px;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.45;
   color: #4e5b67;
   max-width: 510px;
@@ -666,7 +689,7 @@ body.auth-open {
 
 .icon-list li {
   display: flex;
-  gap: 12px;
+  gap: 16px;
 }
 
 .icon-badge {
@@ -692,7 +715,7 @@ body.auth-open {
 
 .icon-list p {
   margin: 5px 0 0;
-  font-size: 12px;
+  font-size: 16px;
   color: #566371;
 }
 
@@ -712,6 +735,7 @@ body.auth-open {
 
 .col-media {
   display: flex;
+  
 }
 
 .manage-section .col-media {
@@ -832,7 +856,7 @@ body.auth-open {
 .testimonial-intro p {
   margin: 0;
   color: #4f5d6b;
-  font-size: 13px;
+  font-size: 16px;
   max-width: 470px;
 }
 
@@ -883,31 +907,40 @@ body.auth-open {
 }
 
 .testimonial-body {
-  padding: 16px 18px;
+  display: grid;
+  grid-template-areas:
+  "A A"
+  "B C";
+
 }
 
 .testimonial-body blockquote {
-  margin: 0;
-  font-size: 16px;
+  margin: 16px;
+  font-size: 24px;
   line-height: 1.35;
-  font-weight: 500;
+  font-weight: 400;
+  grid-area: A;
 }
 
 .testimonial-author {
-  margin-top: 18px;
-  display: grid;
-  gap: 2px;
+  align-content: center;
+  justify-self: center;
+  font-size: 25px;
+  font-weight: 400;
+  grid-area: B;
 }
 
 .testimonial-author span {
   color: #9faab6;
-  font-size: 13px;
+  font-size: 25px;
 }
 
 .star-row {
-  margin-top: 12px;
+  align-content: center;
+  justify-self: center;
   color: var(--green);
-  font-size: 20px;
+  font-size: 30px;
+  grid-area: C;
 }
 
 /*ABOUT STATS*/
@@ -937,6 +970,8 @@ body.auth-open {
 }
 
 .stat-card {
+  width: 271px;
+  height: 271px;
   background: #ffffff;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
@@ -944,6 +979,7 @@ body.auth-open {
 }
 
 .stat-card h3 {
+  justify-self:center;
   margin: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 600;
@@ -952,8 +988,9 @@ body.auth-open {
 }
 
 .stat-card p {
+  justify-self:center;
   margin: 8px 0 0;
-  font-size: 12px;
+  font-size: 16px;
   color: #515f6a;
 }
 
@@ -1013,7 +1050,7 @@ body.auth-open {
 .cta-text p {
   margin: 14px 0 0;
   color: #bfccd8;
-  font-size: 13px;
+  font-size: 20px;
 }
 
 .cta-buttons {
@@ -1025,7 +1062,6 @@ body.auth-open {
 
 /*FOOTER*/
 .site-footer {
-  margin-top: 40px;
   background-image: url("../images/footer-shape.svg");
   background-size: cover;
   background-position: center;
@@ -1125,7 +1161,7 @@ body.auth-open {
 .footer-col a {
   color: #d4dee8;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 16px;
   transition: color 0.25s ease;
 }
 
@@ -1141,7 +1177,7 @@ body.auth-open {
 
 .footer-contact-col ul {
   color: #d4dee8;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .footer-socials-left {
@@ -1163,7 +1199,7 @@ body.auth-open {
 
 .footer-bottom-row p {
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .footer-bottom-row nav {
@@ -1204,11 +1240,72 @@ body.auth-open {
   }
 
   .media-card-wrap > img {
-    max-width: 390px;
+    max-width: 680px;
+  }
+
+  .testimonial-section {
+    padding: 40px 0;
+  }
+
+  .testimonial-intro {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .testimonial-intro p {
+    margin: 0 auto;
+  }
+
+  .testimonial-carousel {
+    grid-template-columns: auto 1fr auto;
+    gap: 8px;
+  }
+
+  .carousel-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
   }
 
   .testimonial-card {
-    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 0.7fr 1fr;
+    border-radius: var(--radius-lg);
+  }
+
+  .testimonial-photo-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+  }
+
+  .testimonial-body {
+    padding: 0 4px 0 0;
+  }
+
+  .testimonial-body blockquote {
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 16px 12px 12px;
+  }
+
+  .testimonial-author {
+    font-size: 20px;
+    justify-self: start;
+    margin-left: 12px;
+  }
+
+  .testimonial-author span {
+    font-size: 20px;
+  }
+
+  .star-row {
+    font-size: 24px;
+    justify-self: end;
+    margin-right: 12px;
   }
 
   .badge-right {
@@ -1216,7 +1313,7 @@ body.auth-open {
   }
 
   .save-section .media-card-wrap {
-    width: min(100%, 360px);
+    width: min(100%, 400px);
     padding-right: 0;
   }
 
@@ -1293,8 +1390,64 @@ body.auth-open {
     grid-template-columns: 1fr;
   }
 
+  .testimonial-section {
+    padding: 32px 0;
+  }
+
   .testimonial-carousel {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .carousel-arrow {
+    display: none;
+  }
+
+  .testimonial-card {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .testimonial-photo-wrap img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+
+  .testimonial-body {
+    padding: 0 12px 16px;
+    grid-template-areas:
+      "A"
+      "B"
+      "C";
+    gap: 8px;
+  }
+
+  .testimonial-body blockquote {
+    font-size: 18px;
+    margin: 16px 0 8px;
+    text-align: center;
+  }
+
+  .testimonial-author {
+    font-size: 18px;
+    justify-self: center;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .testimonial-author span {
+    font-size: 18px;
+    display: block;
+    margin-top: 4px;
+  }
+
+  .star-row {
+    font-size: 28px;
+    justify-self: center;
+    margin-right: 0;
+    margin-top: 4px;
   }
 
   .carousel-arrow {
@@ -1347,41 +1500,5 @@ body.auth-open {
 
   .auth-modal__title {
     font-size: 34px;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-  }
-
-  .hero-section,
-  .insight-section,
-  .manage-section,
-  .save-section,
-  .testimonial-section,
-  .about-section,
-  .cta-section {
-    padding: 42px 0;
-  }
-
-  .hero-content h1,
-  .insight-section h2,
-  .manage-section h2,
-  .save-section h2,
-  .testimonial-section h2,
-  .about-section h2,
-  .cta-section h2 {
-    line-height: 1;
-  }
-
-  .stat-card h3,
-  .insight-card h3,
-  .badge-amount {
-    font-size: 36px;
-  }
-
-  .brand {
-    font-size: 26px;
   }
 }
