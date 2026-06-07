@@ -3,4 +3,4 @@
 - https://www.figma.com/design/MbYH55ca6Xs2sryfRmePXw/web-codding?node-id=0-1&t=BjGCe4sSbS6jHIHC-1
 
 размеры устройств: 
-- 1920
+768 - 1920
